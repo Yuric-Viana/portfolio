@@ -220,6 +220,15 @@ strong {
 }
 
 @media ( max-width: 1000px ) {
+
+    .conteudo__cabecalho__paragrafo {
+        width: auto;
+    }
+
+    li {
+        width: auto ;
+    }
+    
     .experiencia__empresa {
        margin-top: 10%;
        gap: 70px;
