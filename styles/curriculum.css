@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mogra&family=Montserrat:ital,wght@0,600;1,600&family=Pacifico&family=Playwrite+HU:wght@100..400&display=swap');
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+:root {
+    --color-secundaria: #22D4FD;
+    --color-terciaria: blueviolet;
+
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.apresentacao {
+    width: 60%;
+}
+
+.apresentacao__perfil {
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao__perfil__imagem {
+    width: 28vh;
+    height: 30vh;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.apresentacao__linha {
+    border: 1px solid white;
+    margin-top: 1.5rem;
+    margin-left: 7%;
+    width: 90%;
+} 
+
+.apresentacao__info__subtitulo {
+    color: var(--color-secundaria);
+    margin-left: 10%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: var(--font-primaria);
+    margin-bottom: 5%;
+}
+
+.apresentacao__info {
+    color: white;
+}
+
+.apresentacao__info__paragrafo {
+    font-family: var(--font-secundaria);
+    margin-left: 10%;
+}
+
+.apresentacao__info__icon {
+    max-width: 5vh;
+}
+
+.apresentacao__info p {
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    gap: 2vh;
+}
+
+.apresentacao li {
+    margin-left: 3rem;
+}
+
+li {
+    font-family: var(--font-secundaria);
+    margin-top: 3%;
+    color: white;
+}
+
+li::marker {
+    color: blueviolet;
+}
+
+.linha__vertical {
+    border: 2px solid white;
+    margin-left: 2rem;
+}
+
+.conteudo__nav {
+    top: 20px;
+    position: fixed;
+    right: 20px;
+    padding: 5px;
+    background-color: rgba(156, 150, 150, 0.4);
+    border-radius: 8px;
+}
+
+.conteudo__nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.conteudo__titulo {
+    color: var(--color-secundaria);
+    font-family: var(--font-primaria);
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.conteudo__linha__nome {
+    border: 4px solid white;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.conteudo__cabecalho {
+    
+    font-family: var(--font-primaria);
+}
+
+.conteudo__cabecalho__subtitulo {
+    color: var(--color-secundaria);
+    font-family: var(--font-primaria);
+    margin-top: 4rem;
+    margin-left: 10%;
+    font-size: 1.7rem;
+}
+
+.conteudo__cabecalho__paragrafo {
+    color: white;
+    width: 70%;
+    margin-left: 10%;
+    font-family: var(--font-secundaria);
+    margin-top: 2rem;
+}
+
+.conteudo__linha {
+    width: 80%;
+    border: 1px solid white;
+    margin: 20px auto;
+    margin-top: 4rem;
+}
+
+.experiencia {
+    color: white;
+    margin-left: 10%;
+}
+
+.experiencia h2 {
+    color: var(--color-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 1.7rem;
+}
+
+.experiencia__empresa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    font-family: var(--font-primaria);
+}
+
+.experiencia__empresa p {
+    margin-right: 11%;
+}
+
+strong {
+    color: var(--color-terciaria);
+}
+
+.experiencia__subtitulo {
+    font-family: var(--font-primaria);
+    color: var(--color-terciaria);
+}
+
+.experiencia__list {
+    margin: 3% 2%;
+    margin-bottom: 12%;
+    width: 90%;
+}
+
+.escolaridade {
+    margin-left: 10%;
+    color: white;
+    margin-bottom: 6%;
+}
+
+.escolaridade h2 {
+    color: var(--color-secundaria);
+    font-family: var(--font-primaria);
+    margin-bottom: 3%;
+}
+
+.escolaridade p {
+    font-family: var(--font-primaria);
+}
+
+.certificados {
+    margin-left: 10%;
+    margin-bottom: 6%;
+}
+
+.certificados h2 {
+    color: var(--color-secundaria);
+    font-family: var(--font-primaria);
+}
+
+.certificados li {
+    margin-left: 2%;
+}
+
+@media ( max-width: 1000px ) {
+    .experiencia__empresa {
+       margin-top: 10%;
+       gap: 70px;
+    }
+
+    .experiencia__subtitulo {
+        margin-bottom: 10%;
+    }
+
+    .escolaridade {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
